@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="padding:15px 15px;">Магазин БД</a>
+                <a class="navbar-brand" href="#" style="padding:15px 15px;">Гараж БД</a>
             </div>
             <div class="collapse navbar-collapse js-navbar">
                 <ul class="nav navbar-nav">
@@ -33,14 +33,15 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="provider.html">Поставщик</a></li>
-                            <li><a href="auto.html">Филиал</a></li>
+                            <li><a href="auto.html">Автомобили</a></li>
                             <li><a href="client.html">Клиент</a></li>
-                            <li><a href="clientcard.html">Карта клиента</a></li>
-                            <li><a href="delivery.html">Доставка</a></li>
-                            <li><a href="food.html">Еда</a></li>
-                            <li><a href="pay.html">Оплата</a></li>
-                            <li><a href="position.html">Позиция</a></li>
-                            <li><a href="product.html">Продукт</a></li>
+                            <li><a href="dimensions.html">Габариты</a></li>
+                            <li><a href="driver.html">Водитель</a></li>
+                            <li><a href="fuel.html">Топливо</a></li>
+                            <li><a href="garage.html">Гараж</a></li>
+                            <li><a href="orderauto.html">Заказ авто</a></li>
+                            <li><a href="reference.html">Справка</a></li>
+                            <li><a href="service.html">Сервис</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -69,7 +70,7 @@
                 <div class="modal-body">
                     <form onsubmit="deleteReference()" action="javascript:void(null);">
                         <center>
-                            <input type="text" style="margin: 10px" placeholder="ФИО" id="dateOfIssueForDelete">
+                            <input type="text" style="margin: 10px" placeholder="Дата выдачи" id="dateOfIssueForDelete">
                             <br/>
                             <button type="submit" class="btn">Удалить</button></center>
                     </form>
@@ -96,17 +97,17 @@
                 <div class="modal-body">
                     <form onsubmit="addNewReference()" action="javascript:void(null);">
                         <center>
-                            <input type="text" placeholder="Офтальмолог" id="ophthalmologist">
+                            <input type="text" style="margin: 10px"  placeholder="Офтальмолог" id="ophthalmologist">
                             <br/>
-                            <input type="text" placeholder="Хирург" id="surgeon">
+                            <input type="text" style="margin: 10px"  placeholder="Хирург" id="surgeon">
                             <br/>
-                            <input type="text" placeholder="Психолог" id="psychologist">
+                            <input type="text" style="margin: 10px"  placeholder="Психолог" id="psychologist">
                             <br/>
-                            <input type="text" placeholder="Лор" id="lor">
+                            <input type="text" style="margin: 10px"  placeholder="Лор" id="lor">
                             <br/>
-                            <input type="text" placeholder="Срок действия" id="dateValidity">
+                            <input type="text" style="margin: 10px"  placeholder="Срок действия" id="dateValidity">
                             <br/>
-                            <input type="text" placeholder="Дата выдачи" id="dateOfIssue">
+                            <input type="text" style="margin: 10px"  placeholder="Дата выдачи" id="dateOfIssue">
                             <br/>
 
                             <button type="submit" class="btn">Добавить</button></center>

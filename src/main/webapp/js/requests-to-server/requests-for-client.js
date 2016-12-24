@@ -45,11 +45,11 @@ priceRequest.onload = function (){             //Функция которая �
     itemsTable.innerHTML = '';      //очищаем таблицу от устаревших данных
     parsedItem._embedded.client.forEach(function(item)  {
         var itemNameElement = document.createElement('td'); //создаем элемент ячейку с названием для таблицы
-        itemNameElement.innerHTML =  item['fio'] ;     //внедряем название предмета, полученное с сервера
+        itemNameElement.innerHTML =  item['name'] ;     //внедряем название предмета, полученное с сервера
         var itemPriceElement = document.createElement('td');
         itemPriceElement.innerHTML = item['numberPhone'];
         var price = document.createElement('td');
-        price.innerHTML = item['idCard'];
+        price.innerHTML = item['address'];
         var elementRow = document.createElement('tr'); /// /создаем строку таблицы
 
         elementRow.appendChild(itemNameElement);      //помещаем обе ячейки в строку

@@ -1,9 +1,9 @@
 
 function deleteProvider() {
-    var name = $('#descriptionForDelete').val();
+    var name = $('#nameForDelete').val();
     $.ajax({
         type: "GET",
-        url: "/provider/search/deleteByDescription?description=" + name.replace("/ /g", "%20"),
+        url: "/provider/search/deleteByName?name=" + name.replace("/ /g", "%20"),
         contentType: "application/json",
         dataType: 'json'
     });
